@@ -94,13 +94,21 @@
     display: flex;
     position: absolute;
     color: #FFF;
-    font-family: Roboto;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
   }
-.chair{
+  .flex{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    white-space: nowrap;
+    padding-left:  70%;
+    padding-bottom: 20%;
+  }
+.chair{ 
     width: 100%;
 }
 .button{
@@ -133,14 +141,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px; 
   }
-  .flex{
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
-    white-space: nowrap;
-    padding-left: 70%;
-    padding-bottom: 20%;
-  }
+  
  
 .offers{
     padding: 80px 10%;
@@ -156,7 +157,14 @@ line-height: 20px;
     line-height: normal;
     margin-bottom: 40px;
   }
-  
+  h4 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+  }
   .goods{
     gap: 30px;
   }
@@ -276,42 +284,36 @@ margin-top: 50px;
   font-weight: 400;
   line-height: normal;
   }
-  .impus-container{
-    display:flex;
+  .blok{
+    display: flex;
     justify-content: center;
-    margin: 100px 0;
+    background-color:  #FFF;
+    margin: 100px 0;  
   }
-  .impus{
-    background: #FFF;
-    padding: 35px 45px 35px 40px;
- 
+  .impus-container{
+    width: 100%;
 
   }
-  .body-impus{
+  .imege-impus{
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .vl{
+    align-self: center;
+    border-left: 1px solid var(--gray, #9f9c9c);
+    height: 100px;
+    margin: auto;
+    display: flex;
     align-items: center;
   }
-  .icon-impus{
+  .imege{
+    padding-left: 50px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+    align-items: center;
   }
-  .img-impus{
-display:flex;
-max-width: 100%;
-margin: 5px;
-height: auto;
-
-  }
-
-  .icon-impus li {
-    flex: 0 0 25%;
-    margin: 40px 0; 
-    border-top: 1px solid #EFEFEF;
-  }
-
+  
   .last-container{
     background: #FFF;
   }
@@ -320,7 +322,6 @@ height: auto;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #d8d6d6;
-
     padding-top: 20px;
     padding-bottom: 30px;
     padding-left: 15%;
@@ -339,6 +340,7 @@ height: auto;
     height: 2px;
     background: #e0dddd;
     margin: 10px 0;
+
 }
 
 ul {
@@ -406,3 +408,6 @@ align-self: flex-start;
 .info{
     align-self: flex-end;
 }
+
+
+
