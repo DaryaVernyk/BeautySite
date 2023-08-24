@@ -284,20 +284,22 @@ line-height: 140.625%;
   .blok{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 100px 0;
-    max-width: 1215.38px;
+    width: 1200.38px;
+
        
   }
   .list{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap:wrap
   }
  
   
   .imege{
-    padding: 45px 45px 45px 45px;
+    padding: 60px 50px 50px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
