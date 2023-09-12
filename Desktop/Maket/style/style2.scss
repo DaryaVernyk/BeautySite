@@ -127,14 +127,12 @@ line-height: 60px;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    padding-top: 98px;
-    padding-bottom: 110px;
-
+padding: 98px 75px 110px 75px;
 
     & &__span{
     color: #000;
     text-align: center;
-    width: 45%;
+    width: 55%;
     @include font(50px, normal, 600, 60px, "Graphik LC TT");
   }
    & &__logo{
@@ -149,16 +147,11 @@ justify-content: center;
 align-items: center;
 margin: 100px 75px 200px 75px;
 
-.contener-three__imeg{
-  &--color{
-background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-  }
-}
+
+
 .contener-three__info{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: 30px;
   
 
@@ -194,11 +187,8 @@ gap: 238px;
 .contener-four__info{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: 30px;
   
-
 .info__texst{
   color: #000;
 @include font(50px, normal, 600, 60px, "Graphik LC TT");
@@ -225,16 +215,11 @@ u{
   .contener-six{
     padding-left: 75px;
     padding-right: 75px;
-margin-bottom: 150px;
+    margin-bottom: 150px;
     display: inline-flex;
-justify-content: center;
-align-items: center;
-gap: 178px;
-    .blok{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  gap: 138px;
       .contener_imeg{
 border-radius: 4px;
 background: #FFF;
@@ -246,15 +231,15 @@ background: #FFF8E4;
       background: #FFF;
       padding: 30px;
      }
+     span{
+      padding-left: 60px;
+     }
   }
   .contener-six__info{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 30px;
     
-  
   .info__texst{
     color: #000;
   @include font(50px, normal, 600, 60px, "Graphik LC TT");
@@ -276,7 +261,7 @@ background: #FFF8E4;
   
   }
   }
-  }
+  
   
   .contener-seven{
     background: #FFF8E4;
@@ -419,7 +404,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 background: #DABC98;
-padding: 70px 76px 84px 74px;
+padding-top: 69px;
+padding-bottom: 80px;
+padding-left: 54px;
 gap: 10px;
 
 & &__blok{
@@ -428,13 +415,10 @@ gap: 10px;
   justify-content: center;
   align-items: center;
 }
-& &__blok-imeg{
-  width: 176px;
-height: 154px;
-}
 & &__blok-texst{
   color: #000;
 @include font(35px, normal, 600, 50px, "Graphik LC TT");
+
 
 }
 & &__blok-list{
@@ -455,9 +439,11 @@ gap: 55px;
 letter-spacing: 0.75px;
 }
 .right{
-  border-right: 1px solid #cc1111;;
-  width: 10px;
-  height: 100%;
+  border-right: 1px solid #000;;
+  width: 1px;
+  height: 168px;
+  padding-right: 71px;
+
 }
 }
 

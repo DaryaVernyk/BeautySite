@@ -129,13 +129,12 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  padding-top: 98px;
-  padding-bottom: 110px;
+  padding: 98px 75px 110px 75px;
 }
 .contenertwo .contenertwo__span {
   color: #000;
   text-align: center;
-  width: 45%;
+  width: 55%;
   font-size: 50px;
   font-style: normal;
   font-weight: 600;
@@ -154,14 +153,9 @@
   align-items: center;
   margin: 100px 75px 200px 75px;
 }
-.contener-three .contener-three__imeg--color {
-  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
-}
 .contener-three .contener-three__info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: 30px;
 }
 .contener-three .contener-three__info .info__texst {
@@ -205,8 +199,6 @@
 .contener-four .contener-four__info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: 30px;
 }
 .contener-four .contener-four__info .info__texst {
@@ -246,33 +238,29 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 178px;
+  gap: 138px;
 }
-.contener-six .blok {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.contener-six .blok .contener_imeg {
+.contener-six .contener_imeg {
   border-radius: 4px;
   background: #FFF;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   padding: 119px 66px 158px 66px;
   background: #FFF8E4;
 }
-.contener-six .blok img {
+.contener-six img {
   background: #FFF;
   padding: 30px;
 }
-.contener-six .contener-six__info {
+.contener-six span {
+  padding-left: 60px;
+}
+
+.contener-six__info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: 30px;
 }
-.contener-six .contener-six__info .info__texst {
+.contener-six__info .info__texst {
   color: #000;
   font-size: 50px;
   font-style: normal;
@@ -281,7 +269,7 @@
   font-family: "Graphik LC TT";
   width: 70%;
 }
-.contener-six .contener-six__info .info__texst2 {
+.contener-six__info .info__texst2 {
   color: #000;
   font-size: 20px;
   font-style: normal;
@@ -290,10 +278,10 @@
   font-family: "Graphik LC TT";
   width: 100%;
 }
-.contener-six .contener-six__info .info__texst2 u {
+.contener-six__info .info__texst2 u {
   text-decoration-line: underline;
 }
-.contener-six .contener-six__info .info__texst3 {
+.contener-six__info .info__texst3 {
   color: #000;
   font-size: 20px;
   font-style: normal;
@@ -468,7 +456,9 @@
   justify-content: center;
   align-items: center;
   background: #DABC98;
-  padding: 70px 76px 84px 74px;
+  padding-top: 69px;
+  padding-bottom: 80px;
+  padding-left: 54px;
   gap: 10px;
 }
 .contener-eleven .contener-eleven__blok {
@@ -476,10 +466,6 @@
   gap: 65px;
   justify-content: center;
   align-items: center;
-}
-.contener-eleven .contener-eleven__blok-imeg {
-  width: 176px;
-  height: 154px;
 }
 .contener-eleven .contener-eleven__blok-texst {
   color: #000;
@@ -511,9 +497,10 @@
   letter-spacing: 0.75px;
 }
 .contener-eleven .right {
-  border-right: 1px solid #cc1111;
-  width: 10px;
-  height: 100%;
+  border-right: 1px solid #000;
+  width: 1px;
+  height: 168px;
+  padding-right: 71px;
 }
 
 .contener-twelve {
