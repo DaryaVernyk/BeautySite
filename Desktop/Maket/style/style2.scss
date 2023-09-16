@@ -19,21 +19,23 @@
 
   }
 
-  .navigation{
-  background: hwb(0 100% 0%);
- padding: 31px 51px 24px 51px;
-& &__blok{
+
+ .navigation{
   display: flex;
   align-items: center;
-justify-content: space-around;
+justify-content:space-between;
+background: hwb(0 100% 0%);
+padding: 25px 51px 25px 51px;
+& &__blok{
+  display: flex;
+  gap: 45px;
 }
+
 .blok__list{
   display: flex;
-  gap: 50px;
+  gap: 25px;
   color: #000;
   @include font(15px, normal, 400, 20px, "Graphik LC TT");
-width: 100%;
-
 }
 }
 .blok__button{
@@ -77,7 +79,6 @@ display: flex;
 padding: 97px 75px 147px 75px;
 justify-content: center;
 align-items: flex-start;
-gap: 39.984px;
 
 & &__info{
   display: flex;
@@ -126,7 +127,6 @@ line-height: 60px;
     gap: 70px;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
 padding: 98px 75px 110px 75px;
 
     & &__span{
@@ -139,22 +139,30 @@ padding: 98px 75px 110px 75px;
     gap: 85px;
     display: flex;
     justify-content: center;
+align-items: center
   }
 }
+
+.boks{
+  padding: 100px 75px 200px 75px;
+  display: flex;
+  gap: 238px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 .contener-three {
 display: inline-flex;
 justify-content: center;
 align-items: center;
-margin: 100px 75px 200px 75px;
-
-
+gap: 50px;
 
 .contener-three__info{
   display: flex;
   flex-direction: column;
   gap: 30px;
   
-
+  
 .info__texst{
   color: #000;
 @include font(50px, normal, 600, 60px, "Graphik LC TT");
@@ -173,17 +181,15 @@ u{
 .info__texst3{
   color: #000;
 @include font(20px, normal, 600, 30px, "Graphik LC TT");
-
 }
 }
 }
 .contener-four{
-    padding-left: 75px;
-    padding-right: 75px;
-    display: inline-flex;
+display: inline-flex;
 justify-content: center;
 align-items: center;
 gap: 238px;
+
 .contener-four__info{
   display: flex;
   flex-direction: column;
@@ -211,15 +217,12 @@ u{
 }
 }
 }
-
   .contener-six{
-    padding-left: 75px;
-    padding-right: 75px;
-    margin-bottom: 150px;
     display: inline-flex;
     justify-content: center;
   align-items: center;
-  gap: 138px;
+  gap: 200px;
+
       .contener_imeg{
 border-radius: 4px;
 background: #FFF;
@@ -231,9 +234,7 @@ background: #FFF8E4;
       background: #FFF;
       padding: 30px;
      }
-     span{
-      padding-left: 60px;
-     }
+     
   }
   .contener-six__info{
     display: flex;
@@ -243,13 +244,13 @@ background: #FFF8E4;
   .info__texst{
     color: #000;
   @include font(50px, normal, 600, 60px, "Graphik LC TT");
-  width: 70%; 
+
   
   }
   .info__texst2{
     color: #000;
   @include font(20px, normal, 400, 30px, "Graphik LC TT");
-  width: 100%;
+
   u{
     text-decoration-line: underline;
   }
@@ -262,7 +263,7 @@ background: #FFF8E4;
   }
   }
   
-  
+}
   .contener-seven{
     background: #FFF8E4;
   & &__contener{
@@ -320,7 +321,7 @@ line-height: 35px;
   display: flex;
 flex-direction: column;
 margin:75px 75px;
-padding-top: 154px;
+
 u{
   text-decoration-line: underline;
 }
@@ -350,7 +351,6 @@ gap: 25px;
   
 & &__blok-imeg{
   width: 145px;
-height: 201px;
 }
 & &__blok-texst1{
   color: #000;
@@ -448,20 +448,12 @@ letter-spacing: 0.75px;
 }
 
 .contener-twelve{
-margin-left: 75px;
-margin-right: 75px;
-& &__blok{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-& &__blok-list{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 169px;
-}
+padding:  169px 20px 162px 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
 & &__blok-texst1{
   color: #000;
 text-align: center;
@@ -471,8 +463,9 @@ width: 70%;
 & &__blok-texst2{
   color: #000;
 padding-bottom: 25px;
+text-align: center;
 @include font(25px, normal, 400, 30px, "Graphik LC TT");
-width: 41%;
+width: 50%;
 }
 & &__blok-button1{
   margin-top: 25px;
@@ -490,7 +483,6 @@ width: 41%;
   justify-content: center;
   align-items: center;
   background: #FF9C7D;
-  margin-top: 120px;
   padding: 119px 328px 161px 328px;
 
 & &__blok{
@@ -522,9 +514,8 @@ padding-bottom: 54px;
 }
   }
   .contener-fourteen{
-    margin: 92px 95px 48px 75px;
+padding: 92px 45px 48px 45px;
     display: flex;
-    gap: 140px;
     justify-content: center;
         align-items: baseline;
       & &__list{
@@ -539,7 +530,7 @@ padding-bottom: 28px;
     & &__list-texst{
       color: #000;
 @include font(20px, normal, 400, 30px, "Graphik LC TT");
-width: 60%;
+width: 50%;
 padding-bottom: 15px;
 padding-top: 11px;
 
@@ -555,7 +546,7 @@ padding-top: 11px;
     & &__colums{
       display: flex;
       justify-content:space-between; 
-      gap: 142px;
+      gap: 42px;
     }
     & &__colums-list{
       gap: 21px;
@@ -570,7 +561,7 @@ li{
   padding-top: 15px;
   color: #000;
   @include font(15px, normal, 400, 15px, "Graphik LC TT");
-  width: 150%;
+
  }
   }
   .border{
@@ -580,10 +571,16 @@ li{
     margin-top: 95px;
    }
    .contener-last{
-    margin: 48px 75px 48px 75px;
+    padding: 48px 75px 48px 75px;
     display: flex;
 align-items: center;
-    
+justify-content: space-between;
+    & &__svg{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+    }
     & &__texst{
       @include font(12px, normal, 400, 15px, "Graphik LC TT");
       color: #000;
