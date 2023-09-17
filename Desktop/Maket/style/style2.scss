@@ -16,10 +16,7 @@
     list-style-type: none;
     text-decoration: none;
     font-weight: normal;
-
   }
-
-
  .navigation{
   display: flex;
   align-items: center;
@@ -30,7 +27,6 @@ padding: 25px 51px 25px 51px;
   display: flex;
   gap: 45px;
 }
-
 .blok__list{
   display: flex;
   gap: 25px;
@@ -41,7 +37,6 @@ padding: 25px 51px 25px 51px;
 .blok__button{
   display: flex;
   gap: 10px;
-
 }
 .button{
   border: 1px solid rgba(0, 0, 0, 0.50);
@@ -119,7 +114,6 @@ line-height: 60px;
 @include font(15px, normal, 400, 25px, "Graphik LC TT");
 }
 }
-
   .contenertwo{
     background: #FF9C7D;
     display: flex;
@@ -142,7 +136,6 @@ padding: 98px 75px 110px 75px;
 align-items: center
   }
 }
-
 .boks{
   padding: 100px 75px 200px 75px;
   display: flex;
@@ -156,18 +149,14 @@ display: inline-flex;
 justify-content: center;
 align-items: center;
 gap: 50px;
-
 .contener-three__info{
   display: flex;
   flex-direction: column;
   gap: 30px;
-  
-  
 .info__texst{
   color: #000;
 @include font(50px, normal, 600, 60px, "Graphik LC TT");
 width: 70%; 
-
 }
 .info__texst2{
   color: #000;
@@ -176,7 +165,6 @@ width: 65%;
 u{
   text-decoration-line: underline;
 }
-
 }
 .info__texst3{
   color: #000;
@@ -213,7 +201,6 @@ u{
 .info__texst3{
   color: #000;
 @include font(20px, normal, 600, 30px, "Graphik LC TT");
-
 }
 }
 }
@@ -222,7 +209,6 @@ u{
     justify-content: center;
   align-items: center;
   gap: 200px;
-
       .contener_imeg{
 border-radius: 4px;
 background: #FFF;
@@ -234,7 +220,6 @@ background: #FFF8E4;
       background: #FFF;
       padding: 30px;
      }
-     
   }
   .contener-six__info{
     display: flex;
@@ -244,8 +229,6 @@ background: #FFF8E4;
   .info__texst{
     color: #000;
   @include font(50px, normal, 600, 60px, "Graphik LC TT");
-
-  
   }
   .info__texst2{
     color: #000;
@@ -446,7 +429,6 @@ letter-spacing: 0.75px;
 
 }
 }
-
 .contener-twelve{
 padding:  169px 20px 162px 20px;
 display: flex;
