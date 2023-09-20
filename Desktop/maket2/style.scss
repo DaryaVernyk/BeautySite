@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@700&display=swap');
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon.eot') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf') format('truetype'),
+    url('./fonts/icomoon.woff') format('woff'),
+    url('./fonts/icomoon.svg') format('svg');
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-display: block;
+}
+$white: #fff;
+$white40: rgba(255, 255, 255, 0.4);
+$grey: #333;
+$dark: #000;
+$dark85: rgba(0, 0, 0, 0.85);
+$dark50: rgba(0, 0, 0, 0.5);
+$green: #1ed400;
+$green40: rgba(30, 212, 0, 0.4);
+$cyan: #027FA5;
+$white-smoke: #D5D8DB;
+
+@mixin Roboto($fs, $fw, $lh){
+  font-family: 'Roboto Slab', serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin Lora($fs, $fw, $lh){
+  font-family: 'Lora', serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin Lato($fs, $fw, $lh){
+  font-family: 'Lato', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin Quicksand($fs, $fw, $lh){
+  font-family: 'Quicksand', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin flex($jc, $ai, $gp){
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gp;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e901";
+}
+.icon-vk:before {
+  content: "\e902";
+}
+.icon-youtube:before {
+  content: "\e903";
+
+}
+.header{
+  @include flex (space-around,content,0);
+  background: $dark85;
+  padding: 36px 0;
+  position: sticky;
+  top: 0;
+  &__logo{
+    color: $white;
+  }
+  .nav{
+    &__item{
+      &-link{
+        color: $white;
+      }
+    }
+  }
+  .social{
+    &__item{
+      &-link{
+        color: $white;
+      }
+    }
+  }
+}
+.logo{
+  @include Roboto(32px,700px, 32px );
+}
+.nav{
+  @include flex(center,center, 56px);
+  &__item{
+    &-link{
+      @include Lato(22px, 500px, 22px);
+    }
+  }
+}
+.langBar{
+  @include flex(center,center ,4px);
+}
+.social{
+  @include flex(center,center,32px);
+  &__item{
+    &-link{
+      font-size: 24px;
+    }
+  }
+}
+.btn{
+  background-color: $green;
+  color: $white;
+  text-transform: uppercase;
+  @include Lato(16px, 900px, 16px );
+}
+
+.footer{
+  @include flex (space-around,content,0);
+  background: url(./img/imgMountains\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 96px 0;
+  &__logo{
+    color: $dark;
+  }
+  .nav{
+    &__item{
+      &-link{
+        color: $dark;
+      }
+    }
+  }
+  .social{
+    &__item{
+      &-link{
+        color: $dark;
+      }
+    }
+  }
+}
+
+.bg-photo{
+  background: url(./img/derek-thomson-TWoL-QCZubY-unsplash\ 4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 100%;
+  min-height: 964px;
+  margin-top: -119px;
+  @include flex(center,center , 0);
+  flex-direction: column;
+}
+.call-to-action{
+  @include flex(center, center, 32px );
+  flex-direction: column;
+  background-color: $dark85;
+  padding: 28px;
+  h1{
+    @include Lora(84px, 700px,100px );
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+  span{
+    @include Lato(24px, 400px,24px );
+    color: $white;
+  }
+  .btn{
+    padding: 21px 110px;
+  }
+}
+.svg{
+  padding-top: 75px;
+}
+.info{
+  @include flex(center,center ,32px );
+  flex-direction: column;
+  padding: 144px 160px 144px 160px;
+  background-color: $white;
+  &__texst{
+    @include Roboto(56px, 700px,normal );
+    text-transform: uppercase;
+    color: $grey;
+  }
+  &__texst2{
+    @include Quicksand(20px, 500px, 32px);
+    text-align: center;
+    color: $grey;
+    width: 75%
+  }
+}
+
+
+  .blok{
+    @include flex(center,center, 0px);
+    background-color: $white;
+    padding: 64px 141px 144px 141px;
+
+  & &__imeg{
+    @include flex(center,center, 100px);
+  }
+  &__imeg-list{
+    @include flex(center, center, 25px);
+    flex-direction: column; 
+    padding: 40px 37px 40px 37px;
+
+  }
+  &__imeg-number{
+    text-transform: uppercase;
+    color: $green;
+    @include Roboto(100px,500px, normal );
+    position: absolute;
+   padding-bottom: 230px;
+  }
+  &__imeg-texst{
+    @include Quicksand(30px, 400px, 32px);
+    text-align: center;
+    color: $grey;
+  }
+  svg{
+    z-index: 1;
+  }
+}
+.contener{
+  @include flex(center,center ,25px );
+  flex-direction: column;
+  background: url(./img/ken-cheung-VbLTNceBTFE-unsplash\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 100%;
+  min-height: 758px;
+  &__texst{
+    text-transform: uppercase;
+    @include Roboto(56px, 700px,normal );
+    color: $white;
+  }
+  &__texst2{
+    text-transform: uppercase;
+    @include Roboto(144px, 700px,144px );
+    color: $white;
+  }
+  &__texst3{
+    text-transform: uppercase;
+    @include Quicksand(24px, 500px, 18px);
+    color: $white;
+  }
+  &__texst4{
+    text-align: center;
+    @include Quicksand(24px, 400px, 22px);
+    color: $white;
+    width: 60%;
+  }
+  .line{
+    border: solid 1px #dddbdb;
+    width: 20%;
+    color: $white;
+  }
+  &__texst5{
+    text-transform: uppercase;
+    @include Quicksand(28px, 500px, 32px);
+    color: $white;
+    text-align: center;
+  }
+  .btn{
+    padding: 19px 50px;
+  }
+}
+
+.travel{
+  padding: 124px 149px 72px 149px;
+  @include flex(center, center, 0);
+  flex-direction: column;
+ &__texst{
+    text-transform: uppercase;
+    @include Roboto(56px, 70px, normal);
+    padding-bottom: 55px
+  }
+  .foto{
+    @include flex(center, center, 40px);
+padding-bottom: 50px;  
+}
+&__foto-one{
+  background: url(./img/dmitry-goykolov-X8Vo9rGVPS8-unsplash\ 1.png);
+  width: 26vw;
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+&__foto-texst{
+  text-transform: uppercase;
+  @include Roboto (18px, 400px, 18px);
+  color: $white;
+  padding: 8px 5px;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.85);
+  width: 80%;
+}
+&__foto-two{
+  background: url(./img/michelle-tsang-l0aeuaECCNA-unsplash\ 1.png);
+  width: 26vw;
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+&__foto-texst2{
+  text-transform: uppercase;
+  @include Roboto (18px, 400px, 18px);
+  color: $white;
+  padding: 8px 5px;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.85);
+  width: 71%;
+}
+&__foto-three{
+  background: url(./img/christoph-schulz-wJ6xyh1YMxU-unsplash\ 1.png);
+  width: 26vw;
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+&__foto-texst3{
+  text-transform: uppercase;
+  @include Roboto (18px, 400px, 18px);
+  color: $white;
+  padding: 8px 5px;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.85);
+  width: 61%;
+}
+  .btn{
+    padding: 19px 62px;
+  }
+  &__texst2{
+    text-align: center;
+    @include Quicksand(14px, 500px, 18px);
+    color: $grey;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+}
+
+.color{
+  background: url(./img/jeremy-bishop-TI_3eaoMyjo-unsplash\ 1.png);
+  mix-blend-mode: multiply;
+}
+.travel-tho{
+  padding: 35px 150px 0px 150px;
+  @include flex(center, center, 0);
+  flex-direction: column;
+  background: rgba(30, 212, 0, 0.40);
+ &__texst{
+    text-transform: uppercase;
+    @include Roboto(56px, 70px, normal);
+    padding-bottom: 55px;
+    color: $white;
+  }
+  .foto{
+    @include flex(center, center, 40px);
+padding-bottom: 50px;  
+
+}
+&__foto-one{
+  background: url(./img/photo-1500108870510-66db24a39ee4\ 1.png);
+ width: 25vw;
+  height: 30vh;
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+&__foto-texst{
+  @include Lato(14px, 500px,normal );
+  color: $white;
+  padding: 4px 8px;
+  margin-top: 12px;
+  background: rgba(0, 0, 0, 0.85);
+  width: 27%;
+}
+&__foto-two{
+  background: url(./img/artem-beliaikin-gBXX7odcoy0-unsplash\ 1.png);
+  border: 1px solid rgba(255, 255, 255, 0.40);
+ width: 29vw;
+  height: 34vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+&__foto-texst2{
+  @include Lato(14px, 500px,normal );
+  color: $white;
+  padding: 4px 8px;
+  margin-top: 12px;
+  background: rgba(0, 0, 0, 0.85);
+  width: 30%;
+}
+&__foto-three{
+  background: url(./img/v2osk-WNS__aBJjl4-unsplash\ 1.png);
+  width: 25vw;
+  height: 30vh;
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+&__foto-texst3{
+  @include Lato(14px, 500px,normal );
+  color: $white;
+  padding: 4px 8px;
+  margin-top: 12px;
+  background: rgba(0, 0, 0, 0.85);
+  width: 36%;
+}
+&__foto-svg{
+@include flex(center,center ,129px );
+padding-top: 98px;
+}
+&__foto-svg2{
+  @include flex(center,center ,129px );
+  padding-top: 115px;
+}
+}
+
