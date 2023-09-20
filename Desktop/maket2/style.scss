@@ -434,12 +434,12 @@ padding-bottom: 50px;
 }
 &__foto-svg{
 @include flex(center,center ,0 );
-padding-top: 50px;
+padding-top: 12px;
 
 }
 &__foto-svg2{
   @include flex(center,center ,0 );
-  padding-top: 60px;
+  padding-top: 18px;
 }
 }
 
