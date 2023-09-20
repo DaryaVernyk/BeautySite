@@ -103,6 +103,7 @@
   font-size: 16px;
   font-weight: 900px;
   line-height: 16px;
+  border: none;
 }
 
 .footer {
@@ -179,7 +180,7 @@
   align-items: center;
   gap: 32px;
   flex-direction: column;
-  padding: 144px 160px 144px 160px;
+  padding: 70px 80px 70px 80px;
   background-color: #fff;
 }
 .info__texst {
@@ -193,11 +194,11 @@
 .info__texst2 {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
-  font-weight: 500px;
+  font-weight: normal;
   line-height: 32px;
   text-align: center;
   color: #333;
-  width: 75%;
+  width: 65%;
 }
 
 .blok {
@@ -493,13 +494,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 129px;
-  padding-top: 98px;
+  gap: 0;
+  padding-top: 50px;
 }
 .travel-tho__foto-svg2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 129px;
-  padding-top: 115px;
+  gap: 0;
+  padding-top: 60px;
 }/*# sourceMappingURL=style.css.map */

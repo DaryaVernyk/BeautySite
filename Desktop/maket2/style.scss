@@ -134,6 +134,7 @@ $white-smoke: #D5D8DB;
   color: $white;
   text-transform: uppercase;
   @include Lato(16px, 900px, 16px );
+  border: none;
 }
 
 .footer{
@@ -198,7 +199,7 @@ $white-smoke: #D5D8DB;
 .info{
   @include flex(center,center ,32px );
   flex-direction: column;
-  padding: 144px 160px 144px 160px;
+  padding: 70px 80px 70px 80px;
   background-color: $white;
   &__texst{
     @include Roboto(56px, 700px,normal );
@@ -206,10 +207,10 @@ $white-smoke: #D5D8DB;
     color: $grey;
   }
   &__texst2{
-    @include Quicksand(20px, 500px, 32px);
+    @include Quicksand(20px, normal, 32px);
     text-align: center;
     color: $grey;
-    width: 75%
+    width: 65%
   }
 }
 
@@ -432,12 +433,13 @@ padding-bottom: 50px;
   width: 36%;
 }
 &__foto-svg{
-@include flex(center,center ,129px );
-padding-top: 98px;
+@include flex(center,center ,0 );
+padding-top: 50px;
+
 }
 &__foto-svg2{
-  @include flex(center,center ,129px );
-  padding-top: 115px;
+  @include flex(center,center ,0 );
+  padding-top: 60px;
 }
 }
 
